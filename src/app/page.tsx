@@ -33,7 +33,7 @@ export default function Page(): JSX.Element {
               "CONNECT"
           )}
         </Button>
-        {Array(10).fill(null).map((_, index) => (
+        {Array(5).fill(null).map((_, index) => (
           <Account key={index} />
         ))}
         <Abstraxion
