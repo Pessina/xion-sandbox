@@ -19,6 +19,9 @@ export default function Page(): JSX.Element {
         <h1 className="text-2xl font-bold tracking-tighter text-black dark:text-white">
           ABSTRAXION
         </h1>
+        <button
+          type="button"
+          onClick={() => console.log('test')} >test</button>
         <Button
             fullWidth
             onClick={() => {
@@ -33,7 +36,7 @@ export default function Page(): JSX.Element {
               "CONNECT"
           )}
         </Button>
-        {Array(5).fill(null).map((_, index) => (
+        {Array(10).fill(null).map((_, index) => (
           <Account key={index} />
         ))}
         <Abstraxion
