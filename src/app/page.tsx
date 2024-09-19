@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { Account } from "@/components/account";
 import {
   Abstraxion,
   useAbstraxionAccount,
@@ -33,6 +33,9 @@ export default function Page(): JSX.Element {
               "CONNECT"
           )}
         </Button>
+        {Array(10).fill(null).map((_, index) => (
+          <Account key={index} />
+        ))}
         <Abstraxion
           onClose={() => { 
             setShowAbstraxion(false);
